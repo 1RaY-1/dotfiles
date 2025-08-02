@@ -134,8 +134,8 @@ alias update='sudo apt update'
 alias cupdate='sudo apt update;sudo apt upgrade'
 
 # update shortcuts (Fedora)
-# alias update='sudo dnf check-update'
-# alias cupdate='sudo dnf check-update;sudo dnf -y update'
+# alias update='sudo dnf upgrade --refresh'
+# alias cupdate='sudo dnf upgrade --refresh -y'
 
 ## a quick way to get out of current directory ##
 alias ..='cd ..'
