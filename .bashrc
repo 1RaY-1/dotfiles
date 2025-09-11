@@ -116,11 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Watch live info (every 0.5 scs) of nvme of Linux and NVIDIA usage
+
 alias watch-nvidia="watch -n 0.5 nvidia-smi"
 
-# Watch live info (updates every 0.5 secs) about nvme of Linux (WD BLACK)
 alias watch-nvme="watch -n 0.5 'sudo nvme smart-log /dev/nvme0n1'"
-# Add more 'watch' type of useful aliases
+# Add more 'watch' kind of useful aliases
 
 alias c='clear'
 alias please='sudo'
@@ -143,9 +144,10 @@ alias ..3='cd ../../../'
 alias ..2='cd ../../'
 alias ..4='cd ../../../../'
 
+# Open files mager in current dir
 alias files='nautilus $PWD'
 
-#Different for this os
+# Update grub on Fedora
 #alias update-grub="sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg"
 
 alias edit='vim'
@@ -158,9 +160,9 @@ alias disk_space='ncdu'
 #}
 
 # enable/disable Pop Shop
-alias pop-shop-on='sed -i "s/X-GNOME-Autostart-enabled=false/X-GNOME-Autostart-enabled=true/" /home/{your-username}/.config/autostart/io.elementary.appcenter-daemon.desktop; echo "Pop! Store enabled"; nohup io.elementary.appcenter -s >/dev/null 2>&1 &'
+#alias pop-shop-on='sed -i "s/X-GNOME-Autostart-enabled=false/X-GNOME-Autostart-enabled=true/" /home/{your-username}/.config/autostart/io.elementary.appcenter-daemon.desktop; echo "Pop! Store enabled"; nohup io.elementary.appcenter -s >/dev/null 2>&1 &'
 
-alias pop-shop-off='sed -i "s/X-GNOME-Autostart-enabled=true/X-GNOME-Autostart-enabled=false/" /home/{your-username}/.config/autostart/io.elementary.appcenter-daemon.desktop; echo "Pop! Store disabled"; killall io.elementary.appcenter'
+#alias pop-shop-off='sed -i "s/X-GNOME-Autostart-enabled=true/X-GNOME-Autostart-enabled=false/" /home/{your-username}/.config/autostart/io.elementary.appcenter-daemon.desktop; echo "Pop! Store disabled"; killall io.elementary.appcenter'
 
-# Add yt-dlp (single exe file) to PATH
+# Add some binaries to PATH
 export PATH="$PATH:/home/neo/Applications/"
