@@ -154,6 +154,8 @@ alias edit='vim'
 alias disk_space='ncdu'
 #alias earbuds_battery="upower --dump | grep -E '^Device:|^\s+model:|^\s+percentage:'"
 
+alias shut='/sbin/shutdown now'
+
 # i3 cheatsheet
 #function i3cheatsheet() {
 #egrep ^bind ~/.config/i3/config | cut -d ''' ''' -f 2- | sed '''s/ /\t/''' | column -ts $'''\t''' | pr -2 -w 160 -t | less
@@ -166,3 +168,8 @@ alias disk_space='ncdu'
 
 # Add some binaries to PATH
 export PATH="$PATH:/home/neo/Applications/"
+
+# KVM Stuff
+# To run virsh and virt-viewer without sudo:
+export LIBVIRT_DEFAULT_URI='qemu:///system'
+#export VIRSH_DEFAULT_CONNECT_URI='qemu:///system' # <-- not needed for the moment
