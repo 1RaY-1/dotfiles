@@ -167,7 +167,7 @@ alias shut='/sbin/shutdown now'
 #alias pop-shop-off='sed -i "s/X-GNOME-Autostart-enabled=true/X-GNOME-Autostart-enabled=false/" /home/{your-username}/.config/autostart/io.elementary.appcenter-daemon.desktop; echo "Pop! Store disabled"; killall io.elementary.appcenter'
 
 # Add some binaries to PATH
-export PATH="$PATH:/home/neo/Applications/"
+export PATH="$PATH:/home/$whoami/Applications/"
 
 # KVM Stuff
 # To run virsh and virt-viewer without sudo:
